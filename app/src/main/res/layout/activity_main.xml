@@ -60,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="0"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:textSize="56sp" />
 
                 <TextView
@@ -78,24 +78,17 @@
                     android:textColor="@android:color/holo_red_light"
                     android:textSize="56sp" />
 
-
                 <Button
+                    style="@style/CustomButtonStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
                     android:onClick="addPointForTeamA"
                     android:text="+1 Point" />
 
                 <Button
+                    style="@style/CustomButtonStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
                     android:onClick="addFaulForTeamA"
                     android:text="+1 Faul"
                     android:textColor="@android:color/holo_red_light" />
@@ -146,7 +139,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="0"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:textSize="56sp" />
 
                 <TextView
@@ -166,35 +159,27 @@
 
 
                 <Button
+                    style="@style/CustomButtonStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
                     android:onClick="addPointForTeamB"
                     android:text="+1 Point" />
 
                 <Button
+                    style="@style/CustomButtonStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
                     android:onClick="addFaulForTeamB"
                     android:text="+1 Faul"
                     android:textColor="@android:color/holo_red_light" />
 
             </LinearLayout>
 
-
         </LinearLayout>
     </LinearLayout>
 
-
     <Button
-        android:id="@+id/button"
+        android:id="@+id/reset_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -202,4 +187,5 @@
         android:layout_marginBottom="23dp"
         android:onClick="reset"
         android:text="Reset" />
+
 </RelativeLayout>
